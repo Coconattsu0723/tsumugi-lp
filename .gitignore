@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Draft / rejected image generations
+assets/images/_drafts/
+
+# Editor / temporary files
+*.tmp
+*.swp
+
+# Optional future dependencies/build output
+node_modules/
+dist/
