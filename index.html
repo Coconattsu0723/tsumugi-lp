@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     >
+    <link rel="icon" href="assets/images/logo/logo_tsumugi-main.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -31,7 +32,13 @@
           >
         </a>
 
-        <button class="menu-button" type="button" aria-label="メニュー（準備中）" disabled>
+        <button
+          class="menu-button"
+          type="button"
+          aria-label="メニューを開く"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
           <span class="menu-button__icon" aria-hidden="true">
             <span></span>
             <span></span>
@@ -40,7 +47,7 @@
           <span class="menu-button__label" aria-hidden="true">MENU</span>
         </button>
 
-        <nav class="site-nav" aria-label="主要メニュー">
+        <nav class="site-nav" id="site-navigation" aria-label="主要メニュー">
           <ul class="site-nav__list">
             <li><a href="#service">契約書相談について</a></li>
             <li><a href="#professions">ご相談いただけること</a></li>
@@ -62,8 +69,8 @@
           <div class="hero__content">
             <p class="hero__label">個人事業主のための契約書相談</p>
             <h1 class="hero__title" id="hero-title">
-              <span class="hero__title-line">分からないまま</span><span class="hero__title-line">使う契約書を、</span>
-              <span class="hero__title-line">安心できる契約書へ。</span>
+              <span class="hero__title-part hero__title-part--lead">分からないまま</span><span class="hero__title-part hero__title-part--use">使う</span><span class="hero__title-part hero__title-part--contract">契約書を、</span>
+              <span class="hero__title-part hero__title-part--safe">安心できる契約書へ。</span>
             </h1>
           </div>
 
@@ -694,11 +701,14 @@
 
             <div class="form-field form-field--consent">
               <label>
-                <input type="checkbox" name="privacy-consent">
-                <a href="#privacy-policy-note">プライバシーポリシー</a>に同意する
+                <input type="checkbox" name="privacy-consent" required>
+                <span class="form-consent__text"><a href="#privacy-policy-note">プライバシーポリシー</a>に同意する <span class="required-label">必須</span></span>
               </label>
             </div>
-            <button class="button button--primary" type="button">30分無料相談を予約する</button>
+            <button class="button button--primary" type="submit">30分無料相談を予約する</button>
+            <p class="form-success" id="form-success" role="status" tabindex="-1" hidden>
+              入力内容を確認しました。本フォームはデモのため、データは外部へ送信されていません。
+            </p>
           </form>
         </div>
       </section>
@@ -739,5 +749,6 @@
         <small>© TSUMUGI Administrative Scrivener Office</small>
       </div>
     </footer>
+    <script src="js/script.js" defer></script>
   </body>
 </html>
