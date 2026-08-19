@@ -25,12 +25,20 @@
           <img
             class="site-header__logo"
             src="assets/images/logo/logo_tsumugi-main.png"
-            alt=""
+            alt="つむぎ行政書士事務所"
             width="1536"
             height="1024"
           >
-          <span>つむぎ行政書士事務所</span>
         </a>
+
+        <button class="menu-button" type="button" aria-label="メニュー（準備中）" disabled>
+          <span class="menu-button__icon" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <span class="menu-button__label" aria-hidden="true">MENU</span>
+        </button>
 
         <nav class="site-nav" aria-label="主要メニュー">
           <ul class="site-nav__list">
@@ -54,26 +62,9 @@
           <div class="hero__content">
             <p class="hero__label">個人事業主のための契約書相談</p>
             <h1 class="hero__title" id="hero-title">
-              分からないまま使う契約書を、<br>
-              安心できる契約書へ。
+              <span class="hero__title-line">分からないまま</span><span class="hero__title-line">使う契約書を、</span>
+              <span class="hero__title-line">安心できる契約書へ。</span>
             </h1>
-            <div class="hero__lead">
-              <p>
-                今ある契約書の見直しも、<br>
-                これから用意したい契約書のご相談も。
-              </p>
-              <p>
-                個人事業主の仕事内容や取引の流れに合わせて、<br>
-                必要な内容を一緒に整理します。
-              </p>
-            </div>
-            <a class="button button--primary" href="#contact">30分無料相談を予約する</a>
-            <p class="hero__cta-note">対面・オンライン対応／契約書がなくてもご相談いただけます</p>
-            <ul class="assurance-list" aria-label="無料相談の安心材料">
-              <li>初回相談30分無料</li>
-              <li>ご相談のみでも可能</li>
-              <li>正式なご依頼は見積もり確認後</li>
-            </ul>
           </div>
 
           <figure class="hero__visual">
@@ -85,6 +76,10 @@
             >
             <figcaption>仕事と安心を、契約でつむぐ。</figcaption>
           </figure>
+
+          <div class="hero__action">
+            <a class="button button--primary" href="#contact">30分無料相談を予約する</a>
+          </div>
         </div>
       </section>
 
@@ -101,22 +96,22 @@
             <p>個人で仕事をしていると、契約書について考える場面はあっても、何をどこまで決めればよいのか分からないことがあります。</p>
             <p>分からない部分をそのままにせず、まずは現在の状況から整理してみましょう。</p>
           </div>
-          <ul class="worries__list card-grid">
-            <li class="card">ネットで見つけた雛形を、内容が分からないまま使っている。</li>
-            <li class="card">自分の仕事内容に合った契約書なのか、判断できない。</li>
-            <li class="card">仕事は始まっているけれど、まだ契約書を用意していない。</li>
-            <li class="card">取引先から提示された契約書に、気になる内容がある。</li>
-            <li class="card">報酬や修正回数、キャンセル条件をどこまで書けばよいか分からない。</li>
-            <li class="card">行政書士へ相談するほどの内容なのか、自分では判断できない。</li>
+          <ul class="worries__list">
+            <li>ネットで見つけた雛形を、内容が分からないまま使っている。</li>
+            <li>自分の仕事内容に合った契約書なのか、判断できない。</li>
+            <li>仕事は始まっているけれど、まだ契約書を用意していない。</li>
+            <li>取引先から提示された契約書に、気になる内容がある。</li>
+            <li>報酬や修正回数、キャンセル条件をどこまで書けばよいか分からない。</li>
+            <li>行政書士へ相談するほどの内容なのか、自分では判断できない。</li>
           </ul>
-          <p class="section-message">
+          <p class="worries__message">
             その「分からない」を、<br>
             一つずつ確認するところから始めます。
           </p>
         </div>
       </section>
 
-      <section class="section section--tint contract-status" id="contract-status" aria-labelledby="contract-status-title">
+      <section class="section section--continuation contract-status" id="contract-status" aria-labelledby="contract-status-title">
         <div class="container">
           <div class="section-title">
             <p class="section-title__en" lang="en">FOR YOUR WORK</p>
@@ -131,89 +126,109 @@
           </div>
 
           <div class="contract-status__grid">
-            <article class="card contract-status__card">
-              <img
-                class="icon-image"
-                src="assets/images/icons/contract-status/contract-status_has-document.png"
-                alt=""
-                width="1024"
-                height="1536"
-              >
-              <h3>このまま使ってよいか、確認したい方へ。</h3>
-              <p>現在使っている契約書や、インターネットで見つけた雛形、取引先から提示された契約書についてご相談いただけます。</p>
-              <p>内容を確認し、分かりにくい部分や、仕事内容と合っていない可能性がある部分を整理します。</p>
-              <ul class="check-list">
-                <li>雛形を自分の仕事に合わせて見直したい</li>
+            <article class="contract-status__card">
+              <div class="contract-status__heading">
+                <img
+                  class="contract-status__icon"
+                  src="assets/images/icons/contract-status/contract-status_has-document.png"
+                  alt=""
+                  width="1024"
+                  height="1536"
+                >
+                <h3>このまま使ってよいか、確認したい方へ。</h3>
+              </div>
+              <p>現在使っている契約書や雛形、取引先から提示された契約書を確認し、分かりにくい部分や仕事内容に合っていない可能性がある部分を整理します。</p>
+              <ul class="contract-status__list">
+                <li>雛形が自分の仕事に合っているか見直したい</li>
                 <li>契約内容を分かりやすく説明してほしい</li>
-                <li>必要な項目が抜けていないか確認したい</li>
-                <li>取引先から提示された内容を確認したい</li>
+                <li>必要な項目や、取引先から提示された内容を確認したい</li>
               </ul>
             </article>
 
-            <article class="card contract-status__card">
-              <img
-                class="icon-image"
-                src="assets/images/icons/contract-status/contract-status_no-document.png"
-                alt=""
-                width="1536"
-                height="1024"
-              >
-              <h3>何を用意すればよいか、分からない方へ。</h3>
-              <p>契約書をまだ持っていなくても、ご相談いただけます。</p>
-              <p>仕事内容、取引相手、仕事の進め方などを伺い、契約書が必要か、事前にどのような条件を決めておくとよいかを整理します。</p>
-              <ul class="check-list">
+            <article class="contract-status__card">
+              <div class="contract-status__heading">
+                <img
+                  class="contract-status__icon"
+                  src="assets/images/icons/contract-status/contract-status_no-document.png"
+                  alt=""
+                  width="1536"
+                  height="1024"
+                >
+                <h3>何を用意すればよいか、分からない方へ。</h3>
+              </div>
+              <p>契約書がない段階でも、仕事内容や取引の進め方を伺い、契約書が必要か、事前にどのような条件を決めておくとよいかを整理します。</p>
+              <ul class="contract-status__list">
                 <li>口約束のまま仕事を進めている</li>
-                <li>新しいサービスを始める予定がある</li>
-                <li>契約書の種類が分からない</li>
-                <li>まず何を決めればよいか知りたい</li>
+                <li>新しいサービスに必要な契約書の種類を知りたい</li>
+                <li>まず決めておく条件を整理したい</li>
               </ul>
             </article>
           </div>
 
-          <p class="section-message">契約書を作ることだけが、相談の目的ではありません。<br>まずは現在の仕事と不安を整理し、必要な対応を一緒に考えます。</p>
-          <p class="section-note">契約書は、相手を疑うためのものではありません。<br>お互いが同じ認識で、安心して仕事を進めるための準備です。</p>
+          <p class="contract-status__message">契約書を作ることだけが、相談の目的ではありません。<br>まずは現在の仕事と不安を整理し、必要な対応を一緒に考えます。</p>
         </div>
       </section>
 
-      <section class="section service" id="service" aria-labelledby="service-title">
-        <div class="container service__grid">
-          <div class="service__content">
-            <div class="section-title">
-              <p class="section-title__en" lang="en">OUR SUPPORT</p>
-              <h2 class="section-title__jp" id="service-title">
-                今の仕事に合った契約を、<br>
-                分かる言葉で一緒に整理します。
-              </h2>
-            </div>
-            <div class="section-lead">
-              <p>つむぎ行政書士事務所では、個人事業主の契約書に関するご相談を承っています。</p>
-              <p>難しい言葉を並べて一方的に説明するのではなく、普段の仕事の流れに置き換えながら、必要な内容を一つずつ確認します。</p>
-              <p>契約書の作成をすぐに勧めるのではなく、現在の契約書を活用できるか、どのような対応が必要かを整理したうえでご案内します。</p>
-            </div>
-            <h3>ご相談いただけること</h3>
-            <ul class="check-list">
-              <li>現在使用している契約書の確認</li>
-              <li>インターネットで見つけた雛形の確認</li>
-              <li>取引先から提示された契約書の確認</li>
-              <li>分かりにくい条項や表現の説明</li>
-              <li>仕事内容に必要な契約条件の整理</li>
-              <li>新しく用意する契約書についての相談</li>
-              <li>契約書作成・修正が必要な場合の見積もり</li>
-            </ul>
+      <section class="section section--tint service" id="service" aria-labelledby="service-title">
+        <div class="container">
+          <div class="section-title">
+            <p class="section-title__en" lang="en">OUR SUPPORT</p>
+            <h2 class="section-title__jp" id="service-title">
+              今の仕事に合った契約を、<br>
+              分かる言葉で一緒に整理します。
+            </h2>
           </div>
-          <figure class="service__visual">
-            <img
-              src="assets/images/photos/about/about_takagi-consultation.png"
-              alt="相談者と契約書を確認する高木直人"
-              width="1448"
-              height="1086"
-            >
-          </figure>
+          <p class="section-lead service__lead">つむぎ行政書士事務所では、個人事業主の契約書に関するご相談を承っています。</p>
+
+          <div class="service__body">
+            <figure class="service__visual">
+              <img
+                src="assets/images/photos/about/about_takagi-consultation.png"
+                alt="相談者と契約書を確認する高木直人"
+                width="1448"
+                height="1086"
+              >
+            </figure>
+
+            <div class="service__content">
+              <div class="service__approach">
+                <p>難しい言葉を並べて一方的に説明するのではなく、普段の仕事の流れに置き換えながら、必要な内容を一つずつ確認します。</p>
+                <p>契約書の作成をすぐに勧めるのではなく、現在の契約書を活用できるか、どのような対応が必要かを整理したうえでご案内します。</p>
+              </div>
+
+              <p class="service__support-label">ご相談いただけること</p>
+              <div class="service__groups">
+                <section class="service__group">
+                  <h3>今ある契約書を確認する</h3>
+                  <ul class="service__list">
+                    <li>現在使用している契約書の確認</li>
+                    <li>インターネットで見つけた雛形の確認</li>
+                    <li>取引先から提示された契約書の確認</li>
+                  </ul>
+                </section>
+                <section class="service__group">
+                  <h3>内容と条件を整理する</h3>
+                  <ul class="service__list">
+                    <li>分かりにくい条項や表現の説明</li>
+                    <li>仕事内容に必要な契約条件の整理</li>
+                  </ul>
+                </section>
+                <section class="service__group">
+                  <h3>必要な対応を考える</h3>
+                  <ul class="service__list">
+                    <li>新しく用意する契約書についての相談</li>
+                    <li>契約書作成・修正が必要な場合の見積もり</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </div>
+
           <p class="notice service__notice">契約書の内容や当事者間の状況によっては、当事務所で対応できない場合があります。その場合は、必要に応じて適切な相談先をご案内します。</p>
         </div>
       </section>
 
-      <section class="section section--tint professions" id="professions" aria-labelledby="professions-title">
+      <section class="section section--tint section--continuation professions" id="professions" aria-labelledby="professions-title">
         <div class="container">
           <div class="section-title">
             <p class="section-title__en" lang="en">FOR SOLE PROPRIETORS</p>
@@ -224,32 +239,32 @@
           </div>
           <p class="section-lead">業種を問わず、お客さまや取引先と直接契約して、商品・サービス・制作物などを提供している個人事業主の方が対象です。</p>
 
-          <div class="professions__grid card-grid">
-            <article class="card">
-              <h3>Web・クリエイティブ</h3>
+          <ul class="professions__list">
+            <li>
+              <p class="professions__category">Web・クリエイティブ</p>
               <p>Webデザイナー、ライター、カメラマン、イラストレーター、動画制作者など</p>
-            </article>
-            <article class="card">
-              <h3>講師・コンサルティング</h3>
+            </li>
+            <li>
+              <p class="professions__category">講師・コンサルティング</p>
               <p>オンライン講師、コーチ、コンサルタント、研修講師など</p>
-            </article>
-            <article class="card">
-              <h3>サロン・教室</h3>
+            </li>
+            <li>
+              <p class="professions__category">サロン・教室</p>
               <p>美容サロン、各種教室、レッスンサービスなど</p>
-            </article>
-            <article class="card">
-              <h3>商品・作品販売</h3>
+            </li>
+            <li>
+              <p class="professions__category">商品・作品販売</p>
               <p>ハンドメイド作家、オリジナル商品販売、オンラインショップ運営者など</p>
-            </article>
-            <article class="card">
-              <h3>業務支援</h3>
+            </li>
+            <li>
+              <p class="professions__category">業務支援</p>
               <p>SNS運用、オンライン事務、広報支援、各種代行サービスなど</p>
-            </article>
-          </div>
+            </li>
+          </ul>
 
           <div class="professions__contracts">
             <h3>ご相談いただける契約書の例</h3>
-            <ul class="tag-list">
+            <ul class="professions__contract-list">
               <li>業務委託契約書</li>
               <li>制作・請負に関する契約書</li>
               <li>コンサルティング契約書</li>
@@ -258,7 +273,7 @@
               <li>継続サービスに関する契約書</li>
             </ul>
           </div>
-          <p class="section-note">上記にない業種や契約書についてもご相談いただけます。対応可能か分からない場合も、まずは30分無料相談をご利用ください。</p>
+          <p class="professions__scope">上記にない業種や契約書についてもご相談いただけます。対応可能か分からない場合も、まずは30分無料相談をご利用ください。</p>
         </div>
       </section>
 
@@ -272,49 +287,58 @@
             </h2>
           </div>
           <p class="section-lead">必要な項目は仕事内容によって異なります。次のような内容を、仕事の流れに合わせて確認します。</p>
-          <ol class="check-points__list">
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_scope.png" alt="" width="1254" height="1254">
-              <div><span class="item-number">01</span><h3>業務内容</h3><p>どこまでが依頼内容で、どこからが追加対応になるのか。</p></div>
-            </li>
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_payment.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">02</span><h3>報酬・支払時期</h3><p>金額、支払方法、支払期限はどのようになっているか。</p></div>
-            </li>
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_schedule.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">03</span><h3>納期・提供期間</h3><p>いつまでに納品・提供し、遅れた場合はどう対応するか。</p></div>
-            </li>
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_revision.png" alt="" width="1254" height="1254">
-              <div><span class="item-number">04</span><h3>修正・追加対応</h3><p>修正回数や追加料金が発生する条件は決まっているか。</p></div>
-            </li>
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_cancellation.png" alt="" width="1024" height="1536">
-              <div><span class="item-number">05</span><h3>キャンセル・中途解約</h3><p>途中で依頼がなくなった場合の対応は決まっているか。</p></div>
-            </li>
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_rights.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">06</span><h3>成果物・権利の扱い</h3><p>制作物の使用範囲や、権利の扱いは明確になっているか。</p></div>
-            </li>
-            <li class="card check-point">
-              <img class="icon-image" src="assets/images/icons/check-points/check-point_confidentiality.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">07</span><h3>秘密情報</h3><p>仕事を通じて知った情報を、どのように取り扱うか。</p></div>
-            </li>
-          </ol>
-          <figure class="check-points__visual">
-            <img
-              src="assets/images/photos/about/about_contract-review.png"
-              alt="契約書の内容を確認している様子"
-              width="1448"
-              height="1086"
-            >
-          </figure>
+          <div class="check-points__body">
+            <ol class="check-points__list">
+              <li class="check-point">
+                <span class="item-number">01</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_scope.png" alt="" width="1254" height="1254">
+                <h3>仕事内容・業務範囲</h3>
+              </li>
+              <li class="check-point">
+                <span class="item-number">02</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_payment.png" alt="" width="1536" height="1024">
+                <h3>報酬・支払い条件</h3>
+              </li>
+              <li class="check-point">
+                <span class="item-number">03</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_schedule.png" alt="" width="1536" height="1024">
+                <h3>納期・スケジュール</h3>
+              </li>
+              <li class="check-point">
+                <span class="item-number">04</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_revision.png" alt="" width="1254" height="1254">
+                <h3>修正対応</h3>
+              </li>
+              <li class="check-point">
+                <span class="item-number">05</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_cancellation.png" alt="" width="1024" height="1536">
+                <h3>キャンセル・中止</h3>
+              </li>
+              <li class="check-point">
+                <span class="item-number">06</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_rights.png" alt="" width="1536" height="1024">
+                <h3>著作権・使用範囲・権利関係</h3>
+              </li>
+              <li class="check-point">
+                <span class="item-number">07</span>
+                <img class="check-point__icon" src="assets/images/icons/check-points/check-point_confidentiality.png" alt="" width="1536" height="1024">
+                <h3>秘密保持</h3>
+              </li>
+            </ol>
+            <figure class="check-points__visual">
+              <img
+                src="assets/images/photos/about/about_contract-review.png"
+                alt="契約書の内容を確認している様子"
+                width="1448"
+                height="1086"
+              >
+            </figure>
+          </div>
           <p class="section-message">すべての項目を入れればよいとは限りません。仕事内容と取引に必要な内容を、分かりやすく整理します。</p>
         </div>
       </section>
 
-      <section class="section section--tint flow" id="flow" aria-labelledby="flow-title">
+      <section class="section section--continuation flow" id="flow" aria-labelledby="flow-title">
         <div class="container">
           <div class="section-title">
             <p class="section-title__en" lang="en">FLOW</p>
@@ -323,34 +347,64 @@
               5つのステップで進みます。
             </h2>
           </div>
-          <p class="section-lead">無料相談を受けたからといって、その場で正式に依頼する必要はありません。必要な対応と見積もりをご確認いただき、納得した場合のみご依頼ください。</p>
+          <p class="section-lead">必要な対応と見積もりを確認し、納得した場合のみご依頼いただけます。</p>
           <ol class="flow__list">
-            <li class="card flow-step">
-              <img class="icon-image" src="assets/images/icons/flow/flow_step-01_reservation.png" alt="" width="1536" height="1024">
-              <div><p class="flow-step__number" lang="en">STEP 1</p><h3>フォームから予約</h3><p>LP内の予約フォームから、相談方法、希望日時、現在のお悩みをお送りください。</p></div>
+            <li class="flow-step">
+              <div class="flow-step__marker">
+                <span class="flow-step__number" lang="en">STEP 01</span>
+                <img class="flow-step__icon" src="assets/images/icons/flow/flow_step-01_reservation.png" alt="" width="1536" height="1024">
+              </div>
+              <div class="flow-step__content">
+                <h3>フォームから予約</h3>
+                <p>相談方法・希望日時・現在のお悩みをお送りください。</p>
+              </div>
             </li>
-            <li class="card flow-step">
-              <img class="icon-image" src="assets/images/icons/flow/flow_step-02_confirmation.png" alt="" width="1536" height="1024">
-              <div><p class="flow-step__number" lang="en">STEP 2</p><h3>日程確定のご連絡</h3><p>事務所からメールでご連絡します。日程の確認が取れた時点で、予約確定となります。</p></div>
+            <li class="flow-step">
+              <div class="flow-step__marker">
+                <span class="flow-step__number" lang="en">STEP 02</span>
+                <img class="flow-step__icon" src="assets/images/icons/flow/flow_step-02_confirmation.png" alt="" width="1536" height="1024">
+              </div>
+              <div class="flow-step__content">
+                <h3>日程確定</h3>
+                <p>事務所からの連絡をもって、予約確定となります。</p>
+              </div>
             </li>
-            <li class="card flow-step">
-              <img class="icon-image" src="assets/images/icons/flow/flow_step-03_document-upload.png" alt="" width="1536" height="1024">
-              <div><p class="flow-step__number" lang="en">STEP 3</p><h3>契約書を事前に送付</h3><p>確認を希望する契約書や雛形がある場合は、相談前にお送りください。契約書を持っていない方は、送付不要です。</p></div>
+            <li class="flow-step">
+              <div class="flow-step__marker">
+                <span class="flow-step__number" lang="en">STEP 03</span>
+                <img class="flow-step__icon" src="assets/images/icons/flow/flow_step-03_document-upload.png" alt="" width="1536" height="1024">
+              </div>
+              <div class="flow-step__content">
+                <h3>契約書を事前送付</h3>
+                <p>確認したい契約書がある方のみ、事前にお送りください。</p>
+              </div>
             </li>
-            <li class="card flow-step">
-              <img class="icon-image" src="assets/images/icons/flow/flow_step-04_consultation.png" alt="" width="1536" height="1024">
-              <div><p class="flow-step__number" lang="en">STEP 4</p><h3>30分無料相談</h3><p>オンラインまたは青澄市の事務所で、仕事内容、取引の流れ、不安に感じていることを伺います。</p></div>
+            <li class="flow-step">
+              <div class="flow-step__marker">
+                <span class="flow-step__number" lang="en">STEP 04</span>
+                <img class="flow-step__icon" src="assets/images/icons/flow/flow_step-04_consultation.png" alt="" width="1536" height="1024">
+              </div>
+              <div class="flow-step__content">
+                <h3>30分無料相談</h3>
+                <p>オンラインまたは事務所で、仕事内容や不安を伺います。</p>
+              </div>
             </li>
-            <li class="card flow-step">
-              <img class="icon-image" src="assets/images/icons/flow/flow_step-05_estimate.png" alt="" width="1536" height="1024">
-              <div><p class="flow-step__number" lang="en">STEP 5</p><h3>対応内容と見積もりをご案内</h3><p>必要な対応と料金をご説明します。内容を持ち帰って検討していただけます。正式なご依頼を強制することはありません。</p></div>
+            <li class="flow-step">
+              <div class="flow-step__marker">
+                <span class="flow-step__number" lang="en">STEP 05</span>
+                <img class="flow-step__icon" src="assets/images/icons/flow/flow_step-05_estimate.png" alt="" width="1536" height="1024">
+              </div>
+              <div class="flow-step__content">
+                <h3>対応内容・見積もり案内</h3>
+                <p>必要な対応と料金をご案内します。依頼はその後にご検討いただけます。</p>
+              </div>
             </li>
           </ol>
           <div class="section-cta"><a class="button button--primary" href="#contact">30分無料相談を予約する</a></div>
         </div>
       </section>
 
-      <section class="section reasons" id="reasons" aria-labelledby="reasons-title">
+      <section class="section section--tint reasons" id="reasons" aria-labelledby="reasons-title">
         <div class="container">
           <div class="section-title">
             <p class="section-title__en" lang="en">OUR PROMISE</p>
@@ -359,32 +413,47 @@
               分かりやすい契約書サポートを。
             </h2>
           </div>
-          <ol class="reasons__list card-grid">
-            <li class="card reason">
-              <img class="icon-image" src="assets/images/icons/reasons/reason_clear-explanation.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">01</span><h3>難しい言葉をそのままにしません</h3><p>専門用語だけで説明せず、普段の仕事内容や取引の場面に置き換えてお伝えします。</p></div>
+          <ul class="reasons__list">
+            <li class="reason">
+              <img class="reason__icon" src="assets/images/icons/reasons/reason_clear-explanation.png" alt="" width="1536" height="1024">
+              <div class="reason__content">
+                <h3>分かりやすく説明</h3>
+                <p>仕事内容や取引の場面に置き換えてお伝えします。</p>
+              </div>
             </li>
-            <li class="card reason">
-              <img class="icon-image" src="assets/images/icons/reasons/reason_no-contract-needed.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">02</span><h3>契約書がなくても相談できます</h3><p>まだ契約書を用意していない方には、何を決めておく必要があるかという段階からご案内します。</p></div>
+            <li class="reason">
+              <img class="reason__icon" src="assets/images/icons/reasons/reason_no-contract-needed.png" alt="" width="1536" height="1024">
+              <div class="reason__content">
+                <h3>契約書がなくても相談できる</h3>
+                <p>何を決めるかという段階からご案内します。</p>
+              </div>
             </li>
-            <li class="card reason">
-              <img class="icon-image" src="assets/images/icons/reasons/reason_no-obligation.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">03</span><h3>正式な依頼を強制しません</h3><p>30分無料相談後に、必要な対応と見積もりをご案内します。内容を確認してからご検討いただけます。</p></div>
+            <li class="reason">
+              <img class="reason__icon" src="assets/images/icons/reasons/reason_no-obligation.png" alt="" width="1536" height="1024">
+              <div class="reason__content">
+                <h3>相談だけでもOK・正式依頼不要</h3>
+                <p>見積もりを確認してからご検討いただけます。</p>
+              </div>
             </li>
-            <li class="card reason">
-              <img class="icon-image" src="assets/images/icons/reasons/reason_online-and-office.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">04</span><h3>対面・オンラインに対応します</h3><p>愛知県青澄市の事務所での対面相談と、オンライン相談から選べます。</p></div>
+            <li class="reason">
+              <img class="reason__icon" src="assets/images/icons/reasons/reason_online-and-office.png" alt="" width="1536" height="1024">
+              <div class="reason__content">
+                <h3>オンライン／事務所の両方に対応</h3>
+                <p>相談しやすい方法を選べます。</p>
+              </div>
             </li>
-            <li class="card reason">
-              <img class="icon-image" src="assets/images/icons/reasons/reason_custom-support.png" alt="" width="1536" height="1024">
-              <div><span class="item-number">05</span><h3>仕事の内容に合わせて整理します</h3><p>一般的な雛形をそのまま当てはめるのではなく、仕事内容や取引の流れを伺ったうえで必要な内容を考えます。</p></div>
+            <li class="reason">
+              <img class="reason__icon" src="assets/images/icons/reasons/reason_custom-support.png" alt="" width="1536" height="1024">
+              <div class="reason__content">
+                <h3>内容に応じた個別対応</h3>
+                <p>仕事内容や取引の流れに合わせて整理します。</p>
+              </div>
             </li>
-          </ol>
+          </ul>
         </div>
       </section>
 
-      <section class="section section--tint about" id="about" aria-labelledby="about-title">
+      <section class="section section--tint section--continuation about" id="about" aria-labelledby="about-title">
         <div class="container">
           <div class="section-title">
             <p class="section-title__en" lang="en">ABOUT</p>
@@ -404,12 +473,10 @@
               >
             </figure>
             <div class="about__content">
-              <h3>つむぎ行政書士事務所<br>代表行政書士　高木 直人</h3>
-              <p>個人で仕事をする方から契約書についてお話を伺うと、「必要なのは分かっているけれど、何から始めればよいか分からなかった」という声を多く耳にします。</p>
-              <p>契約書には、普段あまり使わない言葉や、意味を判断しにくい表現が数多くあります。</p>
-              <p>だからこそ、分からないことをそのままにせず、気軽に質問できる相手が必要だと考えています。</p>
-              <p>つむぎ行政書士事務所では、一方的に答えを押しつけるのではなく、仕事内容や現在の状況を伺いながら、一つずつ情報を整理します。</p>
-              <p>契約書がある方も、まだ用意していない方も、まずは現在感じている不安をお聞かせください。</p>
+              <p class="about__role">つむぎ行政書士事務所　代表行政書士</p>
+              <h3 class="about__name">高木 直人</h3>
+              <p>契約書には、普段あまり使わない言葉や、意味を判断しにくい表現が数多くあります。だからこそ、気軽に質問できる相手が必要だと考えています。</p>
+              <p>仕事内容や現在の状況を伺い、難しい言葉を仕事の流れに置き換えながら、一つずつ分かりやすく整理します。</p>
               <p class="brand-message">仕事と安心を、契約でつむぐ。</p>
             </div>
           </div>
@@ -417,32 +484,36 @@
           <div class="office">
             <h3>青澄市の事務所とオンライン、相談しやすい方法を選べます。</h3>
             <div class="office__grid">
-              <article class="card office__card">
+              <figure class="office__item">
                 <img
                   src="assets/images/photos/office/office_consultation-space.png"
                   alt="つむぎ行政書士事務所の相談スペース"
                   width="1448"
                   height="1086"
                 >
-                <h4>事務所での対面相談</h4>
-                <p>愛知県青澄市の事務所で、資料を一緒に確認しながらご相談いただけます。落ち着いてお話しいただけるよう、予約制の相談スペースをご用意しています。</p>
-              </article>
-              <article class="card office__card">
+                <figcaption>
+                  <h4>事務所での対面相談</h4>
+                  <p>予約制の相談スペースで、資料を一緒に確認できます。</p>
+                </figcaption>
+              </figure>
+              <figure class="office__item">
                 <img
                   src="assets/images/photos/office/office_online-desk.png"
                   alt="オンライン相談に使用するデスク"
                   width="1448"
                   height="1086"
                 >
-                <h4>オンライン相談</h4>
-                <p>遠方の方や、事務所へ来る時間を取りにくい方は、オンラインでご相談いただけます。契約書などの資料は、事前に指定の方法でお送りください。</p>
-              </article>
+                <figcaption>
+                  <h4>オンライン相談</h4>
+                  <p>遠方の方や来所が難しい方も、ご自宅などから相談できます。</p>
+                </figcaption>
+              </figure>
             </div>
             <dl class="office-info">
               <div><dt>所在地</dt><dd>愛知県青澄市つむぎ町2-8-10（架空）</dd></div>
               <div><dt>営業時間</dt><dd>平日 9:00〜18:00</dd></div>
               <div><dt>定休日</dt><dd>土・日・祝</dd></div>
-              <div><dt>相談</dt><dd>完全予約制</dd></div>
+              <div><dt>相談方法</dt><dd>対面・オンライン（完全予約制）</dd></div>
             </dl>
           </div>
         </div>
@@ -457,26 +528,34 @@
               事前にお見積もりします。
             </h2>
           </div>
-          <p class="section-lead">契約書の種類、文章量、修正範囲、ご希望の納期によって、必要な対応や料金は異なります。30分無料相談で現在の状況を確認し、正式なご依頼前に、対応内容と見積もりをご案内します。</p>
-          <div class="card pricing__card">
-            <p class="pricing__free">初回相談 <strong>30分無料</strong></p>
-            <ul class="check-list">
-              <li>初回相談は30分無料です</li>
-              <li>見積もり後に依頼を検討できます</li>
-              <li>相談しただけで、正式に依頼する必要はありません</li>
-              <li>正式依頼前に対応内容と料金をご案内します</li>
-              <li>追加対応が必要な場合は事前にご説明します</li>
-            </ul>
+          <div class="pricing__summary">
+            <p class="pricing__eyebrow">初回相談</p>
+            <p class="pricing__free"><strong>30</strong><span>分無料</span></p>
+            <p class="pricing__lead">正式依頼の料金は内容により異なります。無料相談で必要な対応を確認し、依頼前に見積もりをご案内します。</p>
           </div>
-          <div class="pricing__message">
-            <h3>まずは、必要な対応を知るところから。</h3>
-            <p>契約書の作成が必要とは限りません。現在の契約書を活用できる場合や、条件の整理から始められる場合もあります。ご自身で判断できない段階でも、安心してご相談ください。</p>
-          </div>
-          <div class="section-cta"><a class="button button--primary" href="#contact">30分無料相談を予約する</a></div>
+          <ol class="pricing__steps" aria-label="無料相談から正式依頼までの流れ">
+            <li>
+              <span class="pricing__step-number">01</span>
+              <div><h3>30分無料相談</h3><p>現在の状況と不安を伺います。</p></div>
+            </li>
+            <li>
+              <span class="pricing__step-number">02</span>
+              <div><h3>必要な対応を確認</h3><p>確認・修正・作成などを整理します。</p></div>
+            </li>
+            <li>
+              <span class="pricing__step-number">03</span>
+              <div><h3>見積もりをご案内</h3><p>正式依頼の前に料金をお伝えします。</p></div>
+            </li>
+            <li>
+              <span class="pricing__step-number">04</span>
+              <div><h3>内容を確認して判断</h3><p>納得した場合のみご依頼ください。</p></div>
+            </li>
+          </ol>
+          <p class="pricing__assurance">見積もりを確認してから、依頼するか決められます。相談だけでも構いません。</p>
         </div>
       </section>
 
-      <section class="section section--tint faq" id="faq" aria-labelledby="faq-title">
+      <section class="section section--continuation faq" id="faq" aria-labelledby="faq-title">
         <div class="container">
           <div class="section-title">
             <p class="section-title__en" lang="en">FAQ</p>
@@ -484,55 +563,62 @@
           </div>
           <div class="faq__list">
             <details class="faq-item">
-              <summary>契約書を持っていなくても相談できますか。</summary>
-              <p>はい、ご相談いただけます。仕事内容や取引の流れを伺い、契約書が必要か、事前にどのような内容を決めておくとよいかを整理します。</p>
+              <summary aria-controls="faq-answer-1"><span>契約書を持っていなくても相談できますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-1"><p>はい、ご相談いただけます。仕事内容や取引の流れを伺い、契約書が必要か、事前にどのような内容を決めておくとよいかを整理します。</p></div>
             </details>
             <details class="faq-item">
-              <summary>インターネットで見つけた雛形でも確認してもらえますか。</summary>
-              <p>はい、確認できます。雛形が現在の仕事内容や取引方法に合っているか、分かりにくい部分や不足している可能性がある項目を確認します。</p>
+              <summary aria-controls="faq-answer-2"><span>インターネットで見つけた雛形でも確認してもらえますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-2"><p>はい、確認できます。雛形が現在の仕事内容や取引方法に合っているか、分かりにくい部分や不足している可能性がある項目を確認します。</p></div>
             </details>
             <details class="faq-item">
-              <summary>取引先から提示された契約書についても相談できますか。</summary>
-              <p>ご相談いただけます。ただし、契約内容や当事者間の状況によっては、当事務所で対応できない場合があります。初回相談で状況を確認し、対応の可否をご案内します。</p>
+              <summary aria-controls="faq-answer-3"><span>取引先から提示された契約書についても相談できますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-3"><p>ご相談いただけます。ただし、契約内容や当事者間の状況によっては、当事務所で対応できない場合があります。初回相談で状況を確認し、対応の可否をご案内します。</p></div>
             </details>
             <details class="faq-item">
-              <summary>無料相談では、どこまで確認してもらえますか。</summary>
-              <p>30分無料相談では、仕事内容、契約書の有無、不安に感じている点を伺い、今後必要になりそうな対応をご案内します。契約書全文の詳細な確認や修正、作成は、正式なご依頼後に行います。</p>
+              <summary aria-controls="faq-answer-4"><span>無料相談では、どこまで確認してもらえますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-4"><p>30分無料相談では、仕事内容、契約書の有無、不安に感じている点を伺い、今後必要になりそうな対応をご案内します。契約書全文の詳細な確認や修正、作成は、正式なご依頼後に行います。</p></div>
             </details>
             <details class="faq-item">
-              <summary>無料相談を受けたら、必ず依頼しなければなりませんか。</summary>
-              <p>いいえ。無料相談後に、必要な対応と見積もりをご案内します。内容をご確認いただき、納得した場合のみ正式にご依頼ください。</p>
+              <summary aria-controls="faq-answer-5"><span>無料相談を受けたら、必ず依頼しなければなりませんか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-5"><p>いいえ。無料相談後に、必要な対応と見積もりをご案内します。内容をご確認いただき、納得した場合のみ正式にご依頼ください。</p></div>
             </details>
             <details class="faq-item">
-              <summary>オンラインでも契約書を見てもらえますか。</summary>
-              <p>はい。相談前に指定の方法で契約書をお送りいただき、オンラインでお話を伺います。資料の送付方法は、予約確定後にご案内します。</p>
+              <summary aria-controls="faq-answer-6"><span>オンラインでも契約書を見てもらえますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-6"><p>はい。相談前に指定の方法で契約書をお送りいただき、オンラインでお話を伺います。資料の送付方法は、予約確定後にご案内します。</p></div>
             </details>
             <details class="faq-item">
-              <summary>個人事業主であれば、業種を問わず相談できますか。</summary>
-              <p>幅広い業種の方からご相談を承ります。ただし、契約書の種類や内容によっては対応できない場合があります。対応可能か分からない場合も、まずは初回相談でお問い合わせください。</p>
+              <summary aria-controls="faq-answer-7"><span>個人事業主であれば、業種を問わず相談できますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-7"><p>幅広い業種の方からご相談を承ります。ただし、契約書の種類や内容によっては対応できない場合があります。対応可能か分からない場合も、まずは初回相談でお問い合わせください。</p></div>
             </details>
             <details class="faq-item">
-              <summary>すでに取引先とのトラブルが起きている場合も相談できますか。</summary>
-              <p>当事者間で意見の対立が生じている場合など、状況によっては行政書士が対応できないことがあります。現在の状況を伺い、当事務所で対応できない場合は、適切な相談先をご案内します。</p>
+              <summary aria-controls="faq-answer-8"><span>すでに取引先とのトラブルが起きている場合も相談できますか。</span></summary>
+              <div class="faq-item__answer" id="faq-answer-8"><p>当事者間で意見の対立が生じている場合など、状況によっては行政書士が対応できないことがあります。現在の状況を伺い、当事務所で対応できない場合は、適切な相談先をご案内します。</p></div>
             </details>
           </div>
         </div>
       </section>
 
-      <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <section class="section section--tint contact" id="contact" aria-labelledby="contact-title">
         <div class="container contact__inner">
           <div class="section-title">
             <p class="section-title__en" lang="en">RESERVATION</p>
             <h2 class="section-title__jp" id="contact-title">30分無料相談のご予約</h2>
           </div>
-          <p class="section-lead">契約書を持っている方も、まだ用意していない方もご相談いただけます。</p>
-          <p class="notice">フォーム送信時点では予約確定ではありません。事務所からの返信をもって、相談日時の確定となります。</p>
+          <div class="final-cta" aria-labelledby="final-cta-title">
+            <h3 id="final-cta-title">分からないまま悩み続ける前に、<br>まずは今の状況を聞かせてください。</h3>
+            <p>契約書の有無にかかわらず、仕事内容や取引の流れを伺い、必要な対応を一緒に整理します。</p>
+            <a class="button button--primary" href="#reservation-form">30分無料相談を予約する</a>
+            <p class="final-cta__brand">仕事と安心を、契約でつむぐ。</p>
+          </div>
+
+          <p class="contact__intro-note" id="reservation-note">契約書がまだなくても、まずはご相談いただけます。初回相談だけでも問題ありません。ご予約は、事務所からの日程確認の返信後に確定となります。</p>
           <p class="contact__demo-note" id="contact-demo-note">本フォームはポートフォリオ用のデモです。現段階では入力内容の送信・実際の予約は行われません。</p>
 
-          <form class="contact-form" aria-describedby="contact-demo-note" novalidate>
+          <form class="contact-form" id="reservation-form" aria-describedby="reservation-note contact-demo-note" novalidate>
             <div class="form-field">
               <label for="name">お名前 <span class="required-label">必須</span></label>
-              <input type="text" id="name" name="name" autocomplete="name">
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error" required>
+              <p class="form-error" id="name-error" aria-live="polite" hidden></p>
             </div>
             <div class="form-field">
               <label for="business-name">事業名・屋号 <span class="optional-label">任意</span></label>
@@ -540,7 +626,8 @@
             </div>
             <div class="form-field">
               <label for="email">メールアドレス <span class="required-label">必須</span></label>
-              <input type="email" id="email" name="email" autocomplete="email" inputmode="email">
+              <input type="email" id="email" name="email" autocomplete="email" inputmode="email" aria-describedby="email-error" required>
+              <p class="form-error" id="email-error" aria-live="polite" hidden></p>
             </div>
             <div class="form-field">
               <label for="tel">電話番号 <span class="optional-label">任意</span></label>
@@ -548,7 +635,8 @@
             </div>
             <div class="form-field">
               <label for="occupation">業種・仕事内容 <span class="required-label">必須</span></label>
-              <input type="text" id="occupation" name="occupation">
+              <input type="text" id="occupation" name="occupation" aria-describedby="occupation-error" required>
+              <p class="form-error" id="occupation-error" aria-live="polite" hidden></p>
             </div>
 
             <fieldset class="form-field">
@@ -573,7 +661,8 @@
 
             <div class="form-field">
               <label for="message">ご相談内容 <span class="required-label">必須</span></label>
-              <textarea id="message" name="message" rows="7"></textarea>
+              <textarea id="message" name="message" rows="7" aria-describedby="message-error" required></textarea>
+              <p class="form-error" id="message-error" aria-live="polite" hidden></p>
             </div>
 
             <fieldset class="form-field">
@@ -584,37 +673,33 @@
               </div>
             </fieldset>
 
-            <div class="form-field form-field--dates">
-              <label for="preferred-date-1">第一希望日時</label>
-              <input type="datetime-local" id="preferred-date-1" name="preferred-date-1">
-              <label for="preferred-date-2">第二希望日時</label>
-              <input type="datetime-local" id="preferred-date-2" name="preferred-date-2">
-              <label for="preferred-date-3">第三希望日時</label>
-              <input type="datetime-local" id="preferred-date-3" name="preferred-date-3">
-            </div>
+            <fieldset class="form-field form-field--dates">
+              <legend>希望日時</legend>
+              <p class="form-hint">第一希望から第三希望まで入力できます。</p>
+              <div class="date-list">
+                <div class="date-field">
+                  <label for="preferred-date-1">第一希望日時</label>
+                  <input type="datetime-local" id="preferred-date-1" name="preferred-date-1">
+                </div>
+                <div class="date-field">
+                  <label for="preferred-date-2">第二希望日時</label>
+                  <input type="datetime-local" id="preferred-date-2" name="preferred-date-2">
+                </div>
+                <div class="date-field">
+                  <label for="preferred-date-3">第三希望日時</label>
+                  <input type="datetime-local" id="preferred-date-3" name="preferred-date-3">
+                </div>
+              </div>
+            </fieldset>
 
             <div class="form-field form-field--consent">
               <label>
                 <input type="checkbox" name="privacy-consent">
-                <a href="#privacy-policy-note">個人情報の取り扱い</a>に同意する
+                <a href="#privacy-policy-note">プライバシーポリシー</a>に同意する
               </label>
             </div>
             <button class="button button--primary" type="button">30分無料相談を予約する</button>
           </form>
-
-          <ul class="assurance-list contact__assurance" aria-label="予約前の確認事項">
-            <li>相談しただけで正式に依頼する必要はありません</li>
-            <li>契約書を持っていなくてもご相談いただけます</li>
-            <li>予約確定は事務所からの返信後です</li>
-          </ul>
-
-          <div class="final-cta" aria-labelledby="final-cta-title">
-            <h3 id="final-cta-title">分からないまま悩み続ける前に、<br>まずは今の状況を聞かせてください。</h3>
-            <p>契約書がある方も、まだ用意していない方も、最初から答えを決めておく必要はありません。仕事内容や取引の流れを伺い、必要な対応を一緒に整理します。</p>
-            <a class="button button--primary" href="#contact">30分無料相談を予約する</a>
-            <p>対面・オンライン対応／正式なご依頼は見積もり確認後にご検討いただけます</p>
-            <p class="brand-message">仕事と安心を、契約でつむぐ。</p>
-          </div>
         </div>
       </section>
     </main>
