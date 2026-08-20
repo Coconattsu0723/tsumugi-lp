@@ -40,8 +40,9 @@ if (menuButton && siteNavigation) {
 
 const reservationForm = document.querySelector("#reservation-form");
 const formSuccess = document.querySelector("#form-success");
+const reservationSubmit = reservationForm?.querySelector("[data-demo-submit]");
 
-if (reservationForm && formSuccess) {
+if (reservationForm && formSuccess && reservationSubmit) {
   reservationForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -58,4 +59,7 @@ if (reservationForm && formSuccess) {
   reservationForm.addEventListener("input", () => {
     formSuccess.hidden = true;
   });
+
+  reservationSubmit.type = "submit";
+  reservationForm.inert = false;
 }
